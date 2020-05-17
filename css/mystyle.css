@@ -1,0 +1,306 @@
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helvetica Neue', 'sans-serif';
+	margin: 0;
+	line-height: 1.5;
+	color: #2F2F2F;
+}
+
+nav {
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%; /* or it is possible to remove the width: 100%; and set right: 0; */
+	z-index: 1;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+section i {
+	font-size: 30px;
+	color: #E4BA37;
+}
+
+section h2 {
+	text-align: center;
+	font-size: 32px;
+}
+
+.btn {
+	background-color: #1C1C1C;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px grey; 
+	color: white;
+	display: inline-block;
+	padding: 10px 25px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.1s ease;
+}
+
+.btn:active {
+	box-shadow: 0 0 0 grey;
+	transform: translate(2px, 2px);
+}
+
+.btn-video {
+	background-color: #1C1C1C;
+	border-radius: 5px;
+	color: white;
+	display: inline-block;
+	padding: 10px 25px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.1s ease;
+}
+
+.btn-video:active {
+	box-shadow: 0 0 0 grey;
+	transform: translate(2px, 2px);
+}
+
+.container{
+	display: flex;
+	max-width: 100%;
+	padding: 21% 16%;
+	justify-content: center;
+	margin: 0;
+	flex-wrap: wrap;
+}
+
+.container h1 {
+	color: #1C1C1C;
+}
+
+.container-wrap{
+	display: flex;
+	max-width: 900px;
+	margin-bottom: 280px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+#header {
+	background-image: linear-gradient(to bottom right, #FFFFFF, #E8E8E8);
+}
+
+.nav-link {
+	color: #BDBDBD;
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+.nav2 a{
+	margin-right: 60px;
+}
+
+.nav-logo{
+	width: 30px;
+	height: auto;
+	margin-right: 60px;
+	margin-top: 3px;
+
+}
+
+.header-left {
+	margin-right: 80px;
+	width: 32%;
+}
+
+.header-right {	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 80px;
+	min-width: 346px;
+	min-height: 266.7px;
+	max-width: 346px;
+	max-height: 266.7px;
+}
+
+#features {
+	background-color: #BDBDBD;
+}
+
+.features {
+	width: 30%;
+	text-align: center;
+	margin: 0 10px;
+	padding: 10px;
+}
+
+.features h2 {
+	font-size: 25px;
+	color: #1C1C1C;
+
+}
+
+.features p {
+	font-size: 15px;
+	
+}
+
+
+#myVideo {
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.container-video {
+	position: relative;
+	margin-bottom: 280px;
+}
+
+
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+.content h1 {
+
+	font-size: 32px;
+}
+
+.content p {
+	margin: 30px 150px;
+	font-size: 20px;
+}
+
+.center-text {
+	margin-top: 100px;
+}
+
+
+.winners {
+	background-image: linear-gradient(to bottom right, #FFFFFF, #E8E8E8);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+	width: 31%;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	color: #1C1C1C;
+}
+
+.winners h2 {
+	font-size: 25px;
+	margin-top: 5px;
+}
+
+.winners p {
+	font-size: 15px;
+	line-height: 24px;
+	
+}
+
+.winners img {
+	border-radius: 5px;
+}
+
+/* Contato Styling */
+
+#contato {
+	background-image: linear-gradient(to bottom right, #FFFFFF, #E8E8E8);
+}
+
+form{
+	padding-bottom: 100px;
+}
+
+form input {
+	border-radius: 5px;
+	border: none;
+	padding: 10px 25px;
+	outline: none;
+	font-size: 14px;
+	flex: 1;
+	margin-right: 10px;
+}
+
+form .flex {
+	display: flex;
+}
+
+/* Footer Styling */
+
+footer {
+	background-color: #1C1C1C;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+footer .fa-heart {
+	color: red;
+}
+
+/* responsive web design */
+
+@media (max-width: 1095px) {
+	.header-left, .header-right {
+		width: 100%;
+	}
+	.header-right {
+		order: 0;
+		margin: 0;
+	}
+	.header-left {
+		order: 1;
+		margin: 0;
+		text-align: center;
+	}
+	.features {
+		width: 100%;
+	}
+
+	.center-text p {
+		margin: 10px;
+	}
+	.center-text {
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 900px) {
+	.center-text p{
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
