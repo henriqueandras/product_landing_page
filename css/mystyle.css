@@ -65,6 +65,7 @@ section h2 {
 	text-decoration: none;
 	font-weight: 500;
 	transition: all 0.1s ease;
+	cursor: pointer;
 }
 
 .btn-video:active {
